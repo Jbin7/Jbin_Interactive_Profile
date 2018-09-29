@@ -1,4 +1,4 @@
-# my-app
+# Jbin Interactive Profile
 
 ## Project setup
 ```

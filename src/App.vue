@@ -1,31 +1,57 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div v-if="browser == 'Internet Explorer'">
+      <profile-ie></profile-ie>
     </div>
-    <router-view/>
+    <div v-if="browser != 'Internet Explorer'">
+      <profile></profile>
+    </div>
+
   </div>
 </template>
 
+<script>
+  import profile from './views/Profile'
+  import profileIe from './views/ProfileExplorer'
+    export default {
+        name: '',
+        components:{
+            'Profile': profile,
+            'ProfileIe': profileIe
+        },
+        data(){
+            return{
+              browser: ''
+            }
+        },
+        props: {
+
+        },
+        methods:{
+
+        },
+        mounted: function () {
+            var agent = navigator.userAgent, match;
+            var app, version;
+
+            if((match = agent.match(/MSIE ([0-9]+)/)) || (match = agent.match(/Trident.*rv:([0-9]+)/))) app = 'Internet Explorer';
+            else if(match = agent.match(/Chrome\/([0-9]+)/)) app = 'Chrome';
+            else if(match = agent.match(/Firefox\/([0-9]+)/)) app = 'Firefox';
+            else if(match = agent.match(/Safari\/([0-9]+)/)) app = 'Safari';
+            else if((match = agent.match(/OPR\/([0-9]+)/)) || (match = agent.match(/Opera\/([0-9]+)/))) app = 'Opera';
+            else app = 'Unknown';
+
+            if(app !== 'Unknown') version = match[1];
+
+            console.log('Browser: ' + app);
+            console.log('Version: ' + version);
+
+            this.browser = app;
+        }
+    }
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+  html, body { width:100%; height:100%; overflow:auto; margin: 0px;}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
