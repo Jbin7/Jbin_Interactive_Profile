@@ -52,13 +52,13 @@
         width:100%; height:200px;
         background: url('../assets/profile_img/backObject/floor.png') 0 0 repeat-x;
 
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 2s;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-name: stage-floor-move-left;
         -webkit-animation-timing-function: linear;
         -webkit-animation-play-state: paused;
 
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-name: stage-floor-move-left;
         animation-timing-function: linear;
@@ -73,13 +73,13 @@
         width:100%; height:200px;
         background: url('../assets/profile_img/backObject/floor.png') 0 0 repeat-x;
 
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 2s;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-name: stage-floor-move-left;
         -webkit-animation-timing-function: linear;
         -webkit-animation-play-state: running ;
 
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-name: stage-floor-move-left;
         animation-timing-function: linear;
@@ -114,13 +114,13 @@
         width:100%; height:200px;
         background: url('../assets/profile_img/backObject/floor.png') 0 0 repeat-x;
 
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 2s;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-name: stage-floor-move-right;
         -webkit-animation-timing-function: linear;
         -webkit-animation-play-state: paused ;
 
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-name: stage-floor-move-right;
         animation-timing-function: linear;
@@ -134,13 +134,13 @@
         width:100%; height:200px;
         background: url('../assets/profile_img/backObject/floor.png') 0 0 repeat-x;
 
-        -webkit-animation-duration: 3s;
+        -webkit-animation-duration: 2s;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-name: stage-floor-move-right;
         -webkit-animation-timing-function: linear;
         -webkit-animation-play-state: revert ;
 
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-name: stage-floor-move-right;
         animation-timing-function: linear;

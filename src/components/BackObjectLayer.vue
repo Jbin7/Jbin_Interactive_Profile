@@ -46,7 +46,7 @@
                         window.clearInterval(this.interval);
                         var self=this
                         this.interval = window.setInterval(function () {
-                            self.left = self.left + 3
+                            self.left = self.left + 4.5
                         },10)
                         break;
                     case 'right' :
@@ -55,7 +55,7 @@
                         window.clearInterval(this.interval);
                         var self=this
                         this.interval = window.setInterval(function () {
-                            self.left = self.left - 3
+                            self.left = self.left - 4.5
                         },10)
                         break;
                 }

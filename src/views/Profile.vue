@@ -12,18 +12,16 @@
                  @mousedown="handleLeft"
                  @mouseup="handleDefault"
                  @touchstart="handleLeft"
-                 @touchend="handleDefault"
-                 @keyup.37="handleLeft"
-                 @keydown.37="handleDefault">
+                 @touchend="handleDefault">
 
             </div>
             <div class="handle-right"
                  @mousedown="handleRight"
                  @mouseup="handleDefault"
                  @touchstart="handleRight"
-                 @touchend="handleDefault"
-                 @keyup.39="handleRight"
-                 @keydown.39="handleDefault"></div>
+                 @touchend="handleDefault">
+
+            </div>
 
         </div>
 
@@ -63,7 +61,21 @@
             }
         },
         mounted: function () {
-
+            var self = this
+            window.addEventListener("keydown", function (e) {
+                if(e.keyCode == 37){
+                    self.handleLeft()
+                }else if(e.keyCode == 39){
+                    self.handleRight()
+                }
+            })
+            window.addEventListener("keyup", function (e) {
+                if(e.keyCode == 37){
+                    self.handleDefault()
+                }else if(e.keyCode == 39){
+                    self.handleDefault()
+                }
+            })
         }
     }
 </script>

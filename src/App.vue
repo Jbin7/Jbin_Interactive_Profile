@@ -47,6 +47,12 @@
             console.log('Version: ' + version);
 
             this.browser = app;
+
+            if(app == 'Internet Explorer'){
+                setTimeout(function () {
+                    alert('익스플로러에서는 정상 동작하지 않는 기능이 있을수 있습니다. 크롬 브라우저 사용을 권장합니다.')
+                },500)
+            }
         }
     }
 </script>

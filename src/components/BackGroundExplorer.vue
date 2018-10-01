@@ -50,10 +50,11 @@
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
-            -ms-backgroind-size: cover;
+            -ms-: cover;
 
             witdh:100%;
-            height: 100vh;
+            height: 100%;
+            background-size: 100%;
         }
     }
 </style>

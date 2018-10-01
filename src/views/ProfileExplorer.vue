@@ -2,7 +2,7 @@
     <div style="position:absolute; width: 100%;height: 100vh;">
         <div class="profile-app">
 
-            <BackGround></BackGround>
+            <BackGround-ie></BackGround-ie>
             <back-object-layer :state="state"></back-object-layer>
             <Stage :state="state"></Stage>
             <character-ie :state="state"></character-ie>
@@ -37,7 +37,7 @@
 <script>
     export default {
         components:{
-            'BackGround': ()=>import('@/components/BackGround.vue'),
+            'BackGroundIe': ()=>import('@/components/BackGroundExplorer.vue'),
             'CharacterIe': ()=>import('@/components/CharacterExplorer.vue'),
             'BackObjectLayer': ()=>import('@/components/BackObjectLayer.vue'),
             'Stage':  ()=>import('@/components/Stage.vue')
@@ -63,7 +63,21 @@
             }
         },
         mounted: function () {
-
+            var self = this
+            window.addEventListener("keydown", function (e) {
+                if(e.keyCode == 37){
+                    self.handleLeft()
+                }else if(e.keyCode == 39){
+                    self.handleRight()
+                }
+            })
+            window.addEventListener("keyup", function (e) {
+                if(e.keyCode == 37){
+                    self.handleDefault()
+                }else if(e.keyCode == 39){
+                    self.handleDefault()
+                }
+            })
         }
     }
 </script>
