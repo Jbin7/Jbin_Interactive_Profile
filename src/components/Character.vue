@@ -11,6 +11,17 @@
             <div class="bulbasaur" @click="chnageCharacter('bulbasaur')" @touchstart="chnageCharacter('bulbasaur')"></div>
             <div class="venusaur" @click="chnageCharacter('venusaur')" @touchstart="chnageCharacter('venusaur')"></div>
         </div>
+
+        <!-- 캐릭터 이미지 미리 로딩 -->
+        <div class="character-container" style="width: 1px; height: 1px;">
+            <div class="hitokage-normal"></div> <div class="hitokage-run-left"></div> <div class="bulbasaur-run-right"></div>
+            <div class="charizard-normal"></div> <div class="charizard-run-left"></div> <div class="charizard-run-right"></div>
+            <div class="squirtle-normal"></div> <div class="squirtle-run-left"></div> <div class="squirtle-run-right"></div>
+            <div class="blastoise-normal"></div> <div class="blastoise-run-left"></div> <div class="blastoise-run-right"></div>
+            <div class="bulbasaur-normal"></div> <div class="bulbasaur-run-left"></div> <div class="bulbasaur-run-right"></div>
+            <div class="venusaur-normal"></div> <div class="venusaur-run-left"></div> <div class="venusaur-run-right"></div>
+        </div>
+
     </div>
 </template>
 
