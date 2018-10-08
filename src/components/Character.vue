@@ -33,8 +33,8 @@
         ],
         data(){
             return{
-                selCharacter: 'charizard',
-                activeClass: 'charizard-normal'
+                selCharacter: 'hitokage',
+                activeClass: 'hitokage-normal'
             }
         },
         methods:{
@@ -172,8 +172,8 @@
 .hitokage-run-right{
     width:100%;
     height: 100%;
-    -ms-animation: hitokage-run-right 1s infinite;
-    animation: hitokage-run-right 1s infinite;
+    -ms-animation: hitokage-run-right 0.7s infinite;
+    animation: hitokage-run-right 0.7s infinite;
 }
 
 @keyframes hitokage-run-right {
@@ -188,8 +188,8 @@
 .hitokage-run-left{
     width:100%;
     height: 100%;
-    -ms-animation: hitokage-run-left 1s infinite;
-    animation: hitokage-run-left 1s infinite;
+    -ms-animation: hitokage-run-left 0.7s infinite;
+    animation: hitokage-run-left 0.7s infinite;
 }
 
 @keyframes hitokage-run-left {
@@ -276,7 +276,7 @@
 .squirtle-run-right{
     width:100%;
     height: 100%;
-    animation: squirtle-run-right 1s infinite;
+    animation: squirtle-run-right 0.7s infinite;
 }
 
 @keyframes squirtle-run-right {
@@ -291,7 +291,7 @@
 .squirtle-run-left{
     width:100%;
     height: 100%;
-    animation: squirtle-run-left 1s infinite;
+    animation: squirtle-run-left 0.7s infinite;
 }
 
 @keyframes squirtle-run-left {
@@ -330,7 +330,7 @@
 .blastoise-run-right{
     width:100%;
     height: 100%;
-    animation: blastoise-run-right 1s infinite;
+    animation: blastoise-run-right 0.7s infinite;
 }
 
 @keyframes blastoise-run-right {
@@ -350,7 +350,7 @@
 .blastoise-run-left{
     width:100%;
     height: 100%;
-    animation: blastoise-run-left 1s infinite;
+    animation: blastoise-run-left 0.8s infinite;
 }
 
 @keyframes blastoise-run-left {
@@ -372,7 +372,7 @@
 .bulbasaur-normal{
     width:100%;
     height: 100%;
-    animation: bulbasaur-normal 1s infinite;
+    animation: bulbasaur-normal 8s infinite;
     background-repeat: no-repeat;
 }
 
@@ -385,7 +385,7 @@
 .bulbasaur-run-right{
     width:100%;
     height: 100%;
-    animation: bulbasaur-run-right 1s infinite;
+    animation: bulbasaur-run-right 0.6s infinite;
 }
 
 @keyframes bulbasaur-run-right {
@@ -399,7 +399,7 @@
 .bulbasaur-run-left{
     width:100%;
     height: 100%;
-    animation: bulbasaur-run-left 1s infinite;
+    animation: bulbasaur-run-left 0.6s infinite;
 }
 
 @keyframes bulbasaur-run-left {
@@ -415,7 +415,7 @@
 .venusaur-normal{
     width:100%;
     height: 100%;
-    animation: venusaur-normal 1s infinite;
+    animation: venusaur-normal 1.5s infinite;
     background-repeat: no-repeat;
 }
 
@@ -428,7 +428,7 @@
 .venusaur-run-right{
     width:100%;
     height: 100%;
-    animation: venusaur-run-right 1s infinite;
+    animation: venusaur-run-right 0.7s infinite;
 }
 
 @keyframes venusaur-run-right {
@@ -442,7 +442,7 @@
 .venusaur-run-left{
     width:100%;
     height: 100%;
-    animation: venusaur-run-left 1s infinite;
+    animation: venusaur-run-left 0.7s infinite;
 }
 
 @keyframes venusaur-run-left {
