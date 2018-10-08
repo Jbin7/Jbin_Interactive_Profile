@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="character-container">
-            <div><img :src="'/profile_img/character/'+selCharacter+'/'+imgType+'_'+imgNumber+'.png'"></div>
+            <div><img :src="'/profile/profile_img/character/'+selCharacter+'/'+imgType+'_'+imgNumber+'.png'"></div>
         </div>
         <div class="character-selector">
             <div class="hitokage" @click="chnageCharacter('hitokage')" @touchstart="chnageCharacter('hitokage')"></div>
